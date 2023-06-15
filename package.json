@@ -1,0 +1,39 @@
+{
+  "name": "job-dropper",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "dev": "concurrently \"npm run client\" \"npm run server\" ",
+    "build": "cd client && npm run build",
+    "start": "node server/server.js --ignore client",
+    "server": "cd server && nodemon server.js",
+    "client": "cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DustinSwecker/job-dropper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DustinSwecker/job-dropper/issues"
+  },
+  "homepage": "https://github.com/DustinSwecker/job-dropper#readme",
+  "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
+    "apollo-server-express": "^3.12.0",
+    "bootstrap": "^5.3.0",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "graphql": "^15.8.0",
+    "nodemon": "^2.0.22",
+    "react-bootstrap": "^2.7.4"
+  },
+  "devDependencies": {
+    "web-vitals": "^3.3.2"
+  }
+}
